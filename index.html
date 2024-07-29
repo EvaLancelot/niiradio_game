@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <title>Выбери 2 карты</title>
+</head>
+<body>
+<p id="score__now" class="score__now"></p>
+    <section class="memory-game">
+        <div class="memory-card" data-framework="first">
+            <img src="https://www.niir.ru/wp-content/uploads/2024/07/иконки-к-10-сл-08.png" alt="first" class="front-face">
+            <img src="https://www.niir.ru/wp-content/uploads/2024/07/lamp2.png" alt="Guess" class="back-face">
+        </div>
+        <div class="memory-card" data-framework="second">
+            <img src="https://www.niir.ru/wp-content/uploads/2024/07/иконки-к-11сл-10.png" alt="second" class="front-face">
+            <img src="https://www.niir.ru/wp-content/uploads/2024/07/lamp2.png" alt="Guess" class="back-face">
+        </div>
+        <div class="memory-card" data-framework="third">
+            <img src="https://www.niir.ru/wp-content/uploads/2024/07/иконки-к-11сл-12.png" alt="third" class="front-face">
+            <img src="https://www.niir.ru/wp-content/uploads/2024/07/lamp2.png" alt="Guess" class="back-face">
+        </div>
+        <div class="memory-card" data-framework="fourth">
+            <img src="https://www.niir.ru/wp-content/uploads/2024/07/иконки-к-11сл-13.png" alt="fourth" class="front-face">
+            <img src="https://www.niir.ru/wp-content/uploads/2024/07/lamp2.png" alt="Guess" class="back-face">
+        </div>
+        <div class="memory-card" data-framework="fifth">
+            <img src="https://www.niir.ru/wp-content/uploads/2024/07/иконки-к-11сл-15.png" alt="fifth" class="front-face">
+            <img src="https://www.niir.ru/wp-content/uploads/2024/07/lamp2.png" alt="Guess" class="back-face">
+        </div>
+        <div class="memory-card" data-framework="sixth">
+            <img src="https://www.niir.ru/wp-content/uploads/2024/07/иконки-к-11сл-16.png" alt="sixth" class="front-face">
+            <img src="https://www.niir.ru/wp-content/uploads/2024/07/lamp2.png" alt="Guess" class="back-face">
+        </div>
+        <div class="memory-card" data-framework="first">
+            <img src="https://www.niir.ru/wp-content/uploads/2024/07/иконки-к-10-сл-08.png" alt="first" class="front-face">
+            <img src="https://www.niir.ru/wp-content/uploads/2024/07/lamp2.png" alt="Guess" class="back-face">
+        </div>
+        <div class="memory-card" data-framework="second">
+            <img src="https://www.niir.ru/wp-content/uploads/2024/07/иконки-к-11сл-10.png" alt="second" class="front-face">
+            <img src="https://www.niir.ru/wp-content/uploads/2024/07/lamp2.png" alt="Guess" class="back-face">
+        </div>
+        <div class="memory-card" data-framework="third">
+            <img src="https://www.niir.ru/wp-content/uploads/2024/07/иконки-к-11сл-12.png" alt="third" class="front-face">
+            <img src="https://www.niir.ru/wp-content/uploads/2024/07/lamp2.png" alt="Guess" class="back-face">
+        </div>
+        <div class="memory-card" data-framework="fourth">
+            <img src="https://www.niir.ru/wp-content/uploads/2024/07/иконки-к-11сл-13.png" alt="fourth" class="front-face">
+            <img src="https://www.niir.ru/wp-content/uploads/2024/07/lamp2.png" alt="Guess" class="back-face">
+        </div>
+        <div class="memory-card" data-framework="fifth">
+            <img src="https://www.niir.ru/wp-content/uploads/2024/07/иконки-к-11сл-15.png" alt="fifth" class="front-face">
+            <img src="https://www.niir.ru/wp-content/uploads/2024/07/lamp2.png" alt="Guess" class="back-face">
+        </div>
+        <div class="memory-card" data-framework="sixth">
+            <img src="https://www.niir.ru/wp-content/uploads/2024/07/иконки-к-11сл-16.png" alt="sixth" class="front-face">
+            <img src="https://www.niir.ru/wp-content/uploads/2024/07/lamp2.png" alt="Guess" class="back-face">
+        </div>
+    </section>
+    <div id="popup" class="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <img src="https://www.niir.ru/wp-content/uploads/2024/07/12смыччсмс2dsdsArtboard-4-copy-4@10x.png" alt="" class="start_image" width="100%">
+                <div class="popup__title">Карточки с иновационными проектами нашего института</div>
+                <div class="popup__text">
+                    <p>🔍 Как играть:</p>
+                    <ul class="discounts">
+                        <li class="discount"><p>1. Нажмите на карточки, чтобы открыть их.</p></li>
+                        <li class="discount"><p>2. Старайтесь запомнить расположение изображений!</p></li>
+                        <li class="discount"><p>3. Если открытые карточки совпадают, вы забираете их и получаете очки. Если нет, они снова закроются.</p></li>
+                        <li class="discount"><p>4. Игра продолжается до тех пор, пока все пары не будут найдены!</p></li>
+                    </ul>
+                </div>
+                <button class="play_button"><a href="#" class="popup__start" id="start">ИГРАТЬ<i class="fas fa-play play"></i></a></button>
+            </div>
+        </div>
+    </div>
+    <div id="popup__end" class="popup__end">
+        <div class="popup__body">
+            <div class="popup__content">
+                <img src="https://www.niir.ru/wp-content/uploads/2024/07/12смыччсмс2dsdsArtboard-4@10x.png" alt="" class="start_image" width="100%">
+                <div class="popup__title">🎉 Поздравляем с Победой! 🎉<a href="#" class="popup__restart" id="restart" onClick="window.location.reload()"><i class="fas fa-sync-alt restart"></i></a></div>
+                <div class="popup__text">Вы справились с заданием и нашли все пары карточек!</div>
+                <p class="score" id="score__result"></p>
+                <p class="prize" id="prize"></p>
+                <p class="benefit" id="benefit">Еще раз поздравляем и до новых встреч! 🌟</p>
+            </div>
+        </div>
+    </div>
+<script src="https://kit.fontawesome.com/8eb688fe6b.js" crossorigin="anonymous"></script>
+</body>
+</html>
