@@ -204,9 +204,10 @@ body {
     padding-left: 20px;
 }
 .score__now {
-    font-size: 40px;
+    font-size: 20px;
     height: 40px;
-    padding-top: 10px;
+    padding-top: 20px;
+    font-weight: bold;
     color: white;
     width: 0;
     transform: translateX(calc(50vw - 25px));
@@ -217,18 +218,19 @@ body {
 .score {
     font-size: 20px;
     padding-left: 20px;
-    background: aqua;
+    padding: 15px;
+    background: #027CD6;
 }
 .benefit {
-    font-size: 25px;
-    padding-left: 20px;
+    font-size: 20px;
+    padding: 15px;
     color: white;
     background: rgba(36, 36, 36, 0.79);
 }
 .popup__restart {
     margin-left: 15px;
     color: #027CD6;
-    font-size: 35px;
+    font-size: 20px;
 }
 
 @media (max-width : 470px) {

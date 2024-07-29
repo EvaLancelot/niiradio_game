@@ -20,8 +20,8 @@ let codeDate = day + month;
 let scoreCount = 0;
 function flipCard() {
     scoreCount++;
-    document.getElementById("score__now").innerHTML = "Steps:" + Math.floor(scoreCount/2);
-    document.getElementById("score__result").innerHTML = "You steps:" + " " + Math.floor(scoreCount/2) + "Steps";
+    document.getElementById("score__now").innerHTML = "Шаги:&nbsp" + Math.floor(scoreCount/2);
+    document.getElementById("score__result").innerHTML = "Твои шаги:" + " " + Math.floor(scoreCount/2) + " шагов";
     if (scoreCount/2 <= 6) {
         document.getElementById("prize").innerHTML = "Ты супер молодец!";
     } else if (scoreCount/2 > 6 && scoreCount/2 <= 10) {
