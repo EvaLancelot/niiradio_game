@@ -23,12 +23,12 @@ function flipCard() {
     document.getElementById("score__now").innerHTML = "Шаги:&nbsp" + Math.floor(scoreCount/2);
     document.getElementById("score__result").innerHTML = "Твои шаги:" + " " + Math.floor(scoreCount/2) + " шагов";
     if (scoreCount/2 <= 6) {
-        document.getElementById("prize").innerHTML = "Ты супер молодец!";
+        document.getElementById("prize").innerHTML = "Вы справились отлично!";
     } else if (scoreCount/2 > 6 && scoreCount/2 <= 10) {
-        document.getElementById("prize").innerHTML = "Ты молодец!";
+        document.getElementById("prize").innerHTML = "Ты молодец! Но можно лучше.";
 
     } else {
-        document.getElementById("prize").innerHTML = "Ты постарался!";
+        document.getElementById("prize").innerHTML = "Вы справились, но можно и лучше.";
 
     }
     if (lockBoard) return;
