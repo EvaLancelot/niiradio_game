@@ -22,13 +22,13 @@ function flipCard() {
     scoreCount++;
     document.getElementById("score__now").innerHTML = "Шаги:&nbsp" + Math.floor(scoreCount/2);
     document.getElementById("score__result").innerHTML = "Твои шаги:" + " " + Math.floor(scoreCount/2) + " шагов";
-    if (scoreCount/2 <= 6) {
-        document.getElementById("prize").innerHTML = "Вы справились отлично!";
-    } else if (scoreCount/2 > 6 && scoreCount/2 <= 10) {
-        document.getElementById("prize").innerHTML = "Ты молодец! Но можно лучше.";
+    if (scoreCount/2 <= 8) {
+        document.getElementById("prize").innerHTML = "Вы идеально справились! У вас отличная память.";
+    } else if (scoreCount/2 > 8 && scoreCount/2 <= 12) {
+        document.getElementById("prize").innerHTML = "Ты молодец! Хотя можно открыть все карточки за меньшее количество шагов.";
 
     } else {
-        document.getElementById("prize").innerHTML = "Вы справились, но можно и лучше.";
+        document.getElementById("prize").innerHTML = "Вы справились, но шагов для решения было слишком много.";
 
     }
     if (lockBoard) return;

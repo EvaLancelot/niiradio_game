@@ -11,25 +11,31 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    justify-content: center;
     background: url(https://www.niir.ru/wp-content/uploads/2024/07/12смыччсмс2dsdsArtboard-4-copy-6@10x.png) 100% 100% no-repeat;
     background-size: cover;
+    margin: auto;
 }
+
 
 .memory-game {
     width: 640px;
-    height: 640px;
+    height: 620px;
     margin: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    justify-content: center;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -webkit-perspective: 1000px;
     perspective: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .memory-card {
-    width: calc(25%);
+    width: calc(24.5%);
     height: calc(33.333% - 40px);
     margin: 5px 5px 5px 5px;
     position: relative;
@@ -126,15 +132,15 @@ body {
     border-radius: 15px 15px 0px 0px;
 }
 .popup__title {
-    font-size: 16px;
+    font-size: 20px;
     padding-top: 10px;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
 }
 .popup__text {
-    margin-bottom: 10px;
-    font-size: 13px;
+    margin-bottom: 15px;
+    font-size: 15px;
     padding-top: 0px;
     padding-left: 20px;
     padding-right: 20px;
@@ -172,19 +178,19 @@ body {
     transform: translateY(-2px);
 }
 .play_button {
-    margin-top: 30px;
+    margin-top: 0px;
     width: 70%;
     position: relative;
     left: 50%;
     transform: translate(-50%, 0);
     text-decoration: none;
-    background-color: rgb(255, 255, 255);
+    background: linear-gradient(117deg, rgb(140, 197, 250) 0%, rgba(2,124,214,0.7875525210084033) 90%);
     border-radius: 15px;
-    border: 2px solid #027CD6;
+    border: 2px solid #ffffff;
 }
 .popup__start {
     font-size: 20px;
-    color: rgb(3, 3, 3);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -203,73 +209,90 @@ body {
 .play {
     padding-left: 20px;
 }
+
 .score__now {
-    font-size: 20px;
-    height: 40px;
-    padding-top: 20px;
+    font-size: 40px;
+    padding-top: 50px;
     font-weight: bold;
     color: white;
+    transform: translateX(calc(46vw));
     width: 0;
-    transform: translateX(calc(50vw - 25px));
     z-index: 1;
 }
+
 .benefit__text,
 .prize,
 .score {
-    font-size: 20px;
+    font-size: 15pxpx;
     padding-left: 20px;
     padding: 15px;
-    background: #027CD6;
+    background: #a7cfed;
 }
 .benefit {
     font-size: 20px;
     padding: 15px;
-    color: white;
-    background: rgba(36, 36, 36, 0.79);
+    color: rgb(0, 0, 0);
+    background: white;
 }
 .popup__restart {
     margin-left: 15px;
-    color: #027CD6;
+    color: #dbf0ff;
     font-size: 20px;
 }
 
 @media (max-width : 470px) {
+
+    .memory-game {
+        width: 640px;
+        height: 570px;
+        margin: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: center;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-perspective: 1000px;
+        perspective: 1000px;
+        
+    }
     .memory-card {
         
-        width: calc(33.333% - 10px);
-        height: calc(23% - 10px);
-        margin: 5px;
+        width: calc(33.333% - 4px);
+        height: auto;
+        margin: 2px;
         position: relative;
-        -webkit-transform: scale(1);
-        -ms-transform: scale(1);
-        transform: scale(1);
-        -webkit-transform-style: preserve-3d;
-        transform-style: preserve-3d;
-        -webkit-transition: -webkit-transform .5s;
-        transition: -webkit-transform .5s;
-        -o-transition: transform .5s;
-        transition: transform .5s;
-        transition: transform .5s, -webkit-transform .5s;
+    }
+
+    .score__now {
+        font-size: 25px;
+        height: 20px;
+        padding-top: 10px;
+        font-weight: bold;
+        transform: translateX(calc(39vw));
+        color: white;
+        width: 0;
+        z-index: 1;
     }
 }
 @media (max-height : 330px), (max-height : 570px) {
     .popup__title {
-        font-size: 25px;
+        font-size: 20px;
         padding-top: 5px;
         padding-left: 15px;
         padding-right: 15px;
         padding-bottom: 15px;
     }
     .popup__text {
-        margin-bottom: 10px;
-        font-size: 18px;
+        margin-bottom: 15px;
+        font-size: 30px;
         padding-top: 0px;
         padding-left: 15px;
         padding-right: 15px;
     }
     .play_button {
-        margin-top: 0px;
-        height: 45px;
+        margin-top: 10px;
+        height: 40px;
     }
     .popup__start {
         padding-top: 3px;
