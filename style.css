@@ -121,7 +121,7 @@ body {
 .popup__content {
     background-color: white;
     color: black;
-    width: 80%;
+    width: 86%;
     max-width: 500px;
     height: 90vh;
     max-height: 600px;
@@ -277,11 +277,11 @@ body {
 }
 @media (max-height : 330px), (max-height : 570px) {
     .popup__title {
-        font-size: 20px;
+        font-size: 19px;
         padding-top: 5px;
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-bottom: 15px;
+        padding-left: 13px;
+        padding-right: 13px;
+        padding-bottom: 13px;
     }
     .popup__text {
         margin-bottom: 15px;
