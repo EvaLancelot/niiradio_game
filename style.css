@@ -12,8 +12,7 @@ body {
     display: -ms-flexbox;
     display: flex;
     justify-content: center;
-    background: url(https://www.niir.ru/wp-content/uploads/2024/07/12смыччсмс2dsdsArtboard-4-copy-6@10x.png) 100% 100% no-repeat;
-    background-size: cover;
+    background-color: #010B19;
     margin: auto;
 }
 
@@ -88,7 +87,7 @@ body {
     position: fixed;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color:  #010B19;
     top: 0;
     left: 0;
     opacity: 1;
