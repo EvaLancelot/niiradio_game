@@ -210,8 +210,8 @@ body {
 }
 
 .score__now {
-    font-size: 40px;
-    padding-top: 50px;
+    font-size: 35px;
+    padding-top: 30px;
     font-weight: bold;
     color: white;
     transform: translateX(calc(46vw));
