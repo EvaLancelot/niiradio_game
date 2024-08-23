@@ -138,7 +138,7 @@ body {
     padding-bottom: 20px;
 }
 .popup__text {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-size: 15px;
     padding-top: 0px;
     padding-left: 20px;
@@ -205,6 +205,26 @@ body {
     padding-right: 20px;
     padding-bottom: 10px;
 }
+
+.popup__restart {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
 .play {
     padding-left: 20px;
 }
@@ -229,12 +249,14 @@ body {
 }
 .benefit {
     font-size: 20px;
-    padding: 15px;
+    padding-bottom: 11vh;
+    padding-left: 15px;
+    padding-top: 15px;
     color: rgb(0, 0, 0);
     background: white;
 }
 .popup__restart {
-    margin-left: 15px;
+    margin-left: 0px;
     color: #dbf0ff;
     font-size: 20px;
 }

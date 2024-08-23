@@ -22,9 +22,9 @@ function flipCard() {
     scoreCount++;
     document.getElementById("score__now").innerHTML = "Шаги:&nbsp" + Math.floor(scoreCount/2);
     document.getElementById("score__result").innerHTML = "Результат:" + " " + Math.floor(scoreCount/2) + " шагов";
-    if (scoreCount/2 <= 8) {
+    if (scoreCount/2 <= 12) {
         document.getElementById("prize").innerHTML = "Вы идеально справились! У вас отличная память.";
-    } else if (scoreCount/2 > 8 && scoreCount/2 <= 12) {
+    } else if (scoreCount/2 > 12 && scoreCount/2 <= 16) {
         document.getElementById("prize").innerHTML = "Ты молодец! Хотя можно открыть все карточки за меньшее количество шагов.";
 
     } else {
